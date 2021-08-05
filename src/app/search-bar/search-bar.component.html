@@ -1,0 +1,9 @@
+<div>
+<input type="text" id="searchValue" name="searchValue" [(ngModel)]="searchValue">
+<div>
+    <input type="checkbox" id="inStock" name="inStock" [(ngModel)]="checkBoxStatus"/>
+    <label>Only show products in stock</label>
+</div>
+<app-product-table [searchValue]="searchValue" [instock]="checkBoxStatus"></app-product-table>
+</div>
+

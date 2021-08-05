@@ -1,0 +1,8 @@
+<b><label>Name</label></b>
+<b><label style="margin-left: 15px;">Price</label></b>
+<div *ngFor="let category of categories;">
+    <app-product-category-row [category]="category" [searchValue]="searchValue" [instock]="instock">
+    </app-product-category-row>
+</div>
+
+
